@@ -1,0 +1,75 @@
+body, html{
+	box-sizing:border-box;
+	height: 100%;
+
+}
+*, *:before, *:after {
+	box-sizing:inherit;
+}
+
+
+body{
+	font-family: 'Pacifico', cursive;
+	margin: 0;
+	background: url("cat.jpg") center center fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: cover;
+	
+}
+
+a{
+	color:#f2f2f2;
+	font-weight:900;
+	font-size:200%;
+	text-decoration:none;
+	text-shadow:2px 2px #d9d9d9;
+	text-align:center;
+	letter-spacing: 2px;
+	transition: all 0.5s;
+	padding: 80px 5px;
+	display:inline-block;
+	width:100%;
+	background:transparent;
+	
+
+}
+a:hover{
+	color:#ff9999;
+	background: transparent;
+	text-decoration: none;
+}
+
+ul{
+	display:flex;
+
+}
+.flex-nav li{
+	list-style: none;
+	flex:3;
+}
+.flex-nav .social{
+	flex:1;
+}
+
+@media all and (max-width: 1199.98px) { 
+
+	.flex-nav ul {
+		flex-wrap:wrap;
+	}
+	
+	.flex-nav li{
+		flex: 1 1 50%;
+	}
+	.social{
+		flex: 1 1 25%;
+	}
+
+ }
+
+@media all and (max-width: 576px) { 
+	.flex-nav li{
+		flex-basis:100%;
+	}
+
+ }
